@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href = "Application Form-01.css"></link>
+
+    <style type="text/css"> 
+        label{
+            width : px;
+            display : inline-block;
+            margin: 2px;
+        }
+        /* body{
+            background-image: url(download.jpeg);
+            background-image: 100% 100%;
+            background-image: fixed;
+            background-image: no-repeat;
+        } */
+    </style>
+
+</head>
+
+<body class="entire">
+    <script>
+        // Reload the page every 5 seconds (5000 milliseconds)
+        setInterval(function() { 
+            location.reload();
+        }, 2000
+        ); 
+    </script>
+
+    <!-- <img src="" alt="background_images"></img> -->
+
+    <div class = 'container'>
+        <div>
+            <center><h2>E-com Registration Form</h2></center>
+        </div>
+    </div>   
+
+    <div class="box-structure">
+        <form action="/submit-form" method="post">
+            <!-- ft_name -->
+            <div class = "fullname"> 
+            <div class="ft_name">
+                <label for="inputField">First Name<span style="color: red;">*</span>: </label>
+                <input type="text" id="inputField" name="inputField" placeholder="First Name"><br>
+            </div>
+
+            <!-- lt_name -->
+            <div class="lt_name">
+                <label for="inputField">Last Name<span style="color: red;">*</span>: </label>
+                <input type="text" id="inputField" name="inputField" placeholder="Last Name"><br>
+            </div>
+            </div>
+            <!-- age -->
+            <div class="age">
+                <label>Age : </label>
+                <input type="text" placeholder="Age"><br>
+            </div>
+
+            <!-- gender -->
+            <div class="gender">
+                <label>Gender : </label>
+                <input type="radio" name="gender" value="male" id="male" >
+                <label for="male">Male</label>
+                
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">Female</label>
+                
+                <input type="radio" name="gender" value="other" id="other">
+                <label for="other">Other</label><br>
+            </div>
+
+            <!-- dob -->
+            <div class="dob">
+                <label>Date of Birth<span style="color: red;">*</span>:</label>
+                <input type="date" ><br>
+            </div>
+
+            <!-- phone_no -->
+            <div class="phone_no">
+                <label>Phone No<span style="color: red;">*</span>: </label>
+                <input type="tel" placeholder="Phone Number">
+            </div>    
+
+            <!-- education -->
+            <div class="education">
+                <label>Education: </label>
+                <input type="text" placeholder="Education">
+            </div>    
+
+            <!-- email -->
+            <div class="email">
+                <tr>
+                    <td>
+                        Email Id:<span style="color: red;">*</span>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Email">
+                    </td>
+                </tr>
+            </div>
+
+            <!-- address -->
+            <div class="address">
+                <label>Address : </label>
+                <input type="text" placeholder="Door no & Area"><br>
+                <input type="text" placeholder="Landmark"><br>
+                <input type="text" placeholder="District"><br>
+                <input type="text" placeholder="State"><br>
+                <input type="text" placeholder="Pincode">
+            </div>   
+            
+            <!-- submit_icon -->
+            <div class="submit_icon">
+                <button><center> Submit </center></button>
+            </div>
+            </form>
+        </div>
+        </form>
+    </body>
+</html>

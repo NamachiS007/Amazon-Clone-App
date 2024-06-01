@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f6f6f6;
+}
+
+.container {
+    width: 350px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.signin-box {
+    text-align: left;
+}
+
+.signin-box h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 96%; /* Maintains width for the input field */
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  display: inline-block; /* Makes the input field inline */
+  vertical-align: middle; /* Aligns input text vertically */
+}
+
+.forgot-password {
+  display: inline-block; /* Makes the link inline */
+  float: right; /* Aligns the link to the right */
+  padding-top: 0px;
+  margin-bottom: 10px;
+  color: #0073bb;
+  text-decoration: none;
+  font-size: 14px;
+  /* Adjust margin-left for spacing between "Password" and link */
+  margin-left: 8px; /* Example adjustment, test for optimal value */
+  vertical-align: middle; /* Aligns link text vertically */
+}
+
+button[type="submit"]{
+  width: 100%;
+  padding: 10px;
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  /* Set text color to desired value, here black */
+  color: #000; /* Adjust as needed */
+  text-decoration: none;
+}
+
+button[type="submit"]:hover{
+  background-color: #e2ae38;
+}
+
+.create-account-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0c14b;
+    border: 1px solid #a88734;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center; /* Center the text */
+    font-family: Arial, sans-serif; /* Use a similar font */
+    display: inline-block;
+    color: #111; /* Button text color */
+  }
+  
+  .create-account-btn:hover {
+    background-color: #e2ae38;
+  }
+  
+  .create-account-btn a {
+    color: inherit; /* Inherit the color from the button */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the link fill the button */
+    height: 100%; /* Make the link fill the button */
+    width: 100%; /* Make the link fill the button */
+    line-height: normal; /* Ensure the text is vertically centered */
+    font-family: inherit; /* Use the same font as the button */
+  }
+  
+
+.terms {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.terms a {
+    color: #0073bb;
+    text-decoration: none;
+}
+
+.keep-signed-in {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.keep-signed-in input {
+    margin-right: 5px;
+}
+
+.keep-signed-in a {
+    color: #0073bb;
+    text-decoration: none;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.new-to-amazon {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.create-account-btn {
+    background-color: #d9d9d9;
+    border: 1px solid #a88734;
+    color: #111;
+}

@@ -1,0 +1,98 @@
+.entire{
+    background-color:aliceblue;
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0.5px;
+    border: 1px solid #ccc; /* Border around the container */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #2e00fd85;
+}
+
+.box-structure {
+    max-width: 700px;
+    background-color: #f0f0f0; /* Background color of the box structure */
+    border: 1px solid #999; /* Border around the box structure */
+    padding: 0px; /* Padding inside the box structure */
+    margin-left: 325px;
+    margin-right: 80px;
+    margin-top: 10px;
+}
+
+.fullname{
+    display:flex; 
+    /* justify-content: center; */
+    /* gap: 3%; */
+}
+
+.ft_name{
+    margin-top: 10px;
+    margin-bottom: 2%; 
+    margin-right: 10px;
+    padding-left: 50px; 
+}
+
+.lt_name{
+    margin-top: 10px;
+    margin-bottom: 2%; 
+    margin-right: 10px;
+    padding-left: 50px;
+}
+.age{
+    margin-top: 10px;
+    margin-bottom: 2%; 
+    margin-right: 10px;
+    padding-left: 50px; 
+}
+
+.gender{
+    margin-top: 10px;
+    margin-bottom: 2%; 
+    margin-right: 10px;
+    padding-left: 50px; 
+}
+
+.phone_no{
+    margin-top: 10px;
+    margin-bottom: 2%; 
+    margin-right: 10px;
+    padding-left: 50px; 
+}
+
+.dob{
+    margin-top: 10px;
+    margin-bottom: 2%; 
+    margin-right: 10px;
+    padding-left: 50px; 
+}
+
+.education{
+    margin-top: 10px;
+    margin-bottom: 2%; 
+    margin-right: 10px;
+    padding-left: 50px; 
+}
+
+.address{
+    margin-top: 10px;
+    margin-bottom: 2%; 
+    margin-right: 50px;
+    padding-left: 50px; 
+}
+
+.email{
+    margin-top: 10px;
+    margin-bottom: 2%; 
+    margin-right: 50px;
+    padding-left: 50px; 
+}
+
+.submit_icon{
+    padding-left: 315px;
+    margin-top: 10px;
+    margin-bottom: 2%; 
+    margin-right: 50px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sign-In</title>
+    <link rel="stylesheet" href="Amazon Login Page.css">
+</head>
+<body>
+    <script>
+        function validationForm(event){
+            event.preventDefault(); // Prevent default form submission behavior
+    
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var splChars = /[-._!"`'#%&,:;<>=@{}~\$\(\)\*\+\/\\\?\[\]\^\|]+/
+    
+            if(email == "" || password == ""){
+                alert("Username and Password can't be empty");
+                return false;
+            }
+    
+            if(password.length < 5){
+                alert("Password must contain at least 5 characters");
+                return false;
+            }
+    
+            if (!splChars.test(email)){
+                alert("Username should contains Special Characters");
+                return false;
+            }
+    
+            if(!splChars.test(password)){
+                alert("Password should contains Special Characters");
+                return false;
+            }
+    
+            window.location.href = "E-com Home.html";
+
+            //Method for create a account
+            const createAccountBtn = document.querySelector('.create-account-btn');
+
+            createAccountBtn.addEventListener('click', function() {
+            // No further action needed within the function
+            });
+
+        }
+    </script>
+
+    <div class="logo">
+        <img src="Amazon Assets/amazon_logo_dark.png" width="150" alt="Amazon Logo">
+    </div>
+
+    <div class="container">
+        <div class="signin-box">
+            <h2>Sign in</h2>
+            <form onsubmit="return validationForm(event)" id="signin-form">
+                <label for="email" style="font-weight:400;">Email or mobile phone number</label>
+                <input type="text" id="email" name="email" required>
+                
+                <label for="password" style="font-weight:400;">Password <a href="#" class="forgot-password">Forgot Password</a></label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Sign in</button>
+                
+                <div class="terms">
+                    <p>By continuing, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.</p>
+                </div>
+                
+                <div class="keep-signed-in">
+                    <input type="checkbox" id="keep-signed-in" name="keep-signed-in">
+                    <label for="keep-signed-in">Keep me signed in. <a href="#">Details</a></label>
+                </div>
+                
+                <hr>
+                
+                <div class="new-to-amazon">
+                    <p>New to Amazon?</p>
+                </div>
+                
+                <button type="submit" class="create-account-btn">
+                    <a href="Application Form-01.html" target="_self">Create your Amazon account</a>
+                </button>                
+                
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
