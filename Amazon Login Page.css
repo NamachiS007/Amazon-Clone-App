@@ -25,7 +25,8 @@ body {
     display: flex;
     justify-content: top;
     align-items: center;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .logo img {
@@ -46,6 +47,11 @@ body {
 label {
     display: block;
     margin-bottom: 3px;
+}
+
+.email, .passwword{
+    font-size: 15px;
+    font-weight:bolder;
 }
 
 input[type="text"],
