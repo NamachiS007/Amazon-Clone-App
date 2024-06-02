@@ -11,7 +11,6 @@ document.getElementById("signin-form").addEventListener("submit", function(event
     }
 });
 
-
 function validationForm(event){
     event.preventDefault(); // Prevent default form submission behavior
 
